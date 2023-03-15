@@ -18,7 +18,7 @@ while True:
 
     # Utilizamos OpenAI para completar la respuesta a la pregunta
     completado = openai.Completion.create(
-        engine="text-davinci-003",
+        engine="gpt-3.5-turbo",
         prompt=pregunta,
         max_tokens=2048
     )
