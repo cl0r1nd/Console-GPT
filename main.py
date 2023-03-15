@@ -2,8 +2,11 @@
 import openai
 import pyttsx3
 
+# Preguntamos Por La Api De OpenAI
+Api = input("\nIngrese su Api Key: ")
+
 # Establecemos la clave de API para OpenAI
-openai.api_key = "Your Api Key"
+openai.api_key = Api
 
 # Inicializamos el motor de texto a voz de pyttsx3
 engine = pyttsx3.init()
