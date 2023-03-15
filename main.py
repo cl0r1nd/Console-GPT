@@ -26,7 +26,7 @@ while True:
     print(respuesta)
 
     # Preguntamos al usuario si desea escuchar la respuesta
-    reproducir = input("\n¿Desea que se lea la respuesta?"+"\nDigite [SI] para aceptar\nDigite No[NO] para cancelar\nIngrese opción: ")
+    reproducir = input("\n¿Desea que se lea la respuesta?"+"\nDigite [SI] para aceptar\nDigite [NO] para cancelar\nIngrese opción: ")
     reproducir_lower = reproducir.lower()
 
     if reproducir_lower == "si":
@@ -35,7 +35,7 @@ while True:
         engine.runAndWait()
 
         # Preguntamos al usuario si desea salir del programa
-        salir = input("\n¿Desea salir?"+"\nDigite [SI] para aceptar\nDigite No[NO] para cancelar\nIngrese opción: ")
+        salir = input("\n¿Desea salir?"+"\nDigite [SI] para aceptar\nDigite [NO] para cancelar\nIngrese opción: ")
         salir_lower = salir.lower()
         if salir_lower == "si":
             # Si el usuario desea salir, salimos del bucle y terminamos el programa
@@ -49,7 +49,7 @@ while True:
 
     elif reproducir_lower == "no":
         # Si el usuario no desea escuchar la respuesta, lo notificamos y preguntamos si desea salir del programa
-        salir = input("\n¿Desea salir?"+"\nDigite [SI] para aceptar\nDigite No[NO] para cancelar\nIngrese opción: ")
+        salir = input("\n¿Desea salir?"+"\nDigite [SI] para aceptar\nDigite [NO] para cancelar\nIngrese opción: ")
         salir_lower = salir.lower()
         if salir_lower == "si":
             # Si el usuario desea salir, salimos del bucle y terminamos el programa
@@ -66,7 +66,7 @@ while True:
     else:
         # Si el usuario ingresa una opción inválida, lo notificamos y preguntamos si desea salir del programa
         print("\nOpción inválida")
-        salir = input("\n¿Desea salir?"+"\nDigite [SI] para aceptar\nDigite No[NO] para cancelar\nIngrese opción: ")
+        salir = input("\n¿Desea salir?"+"\nDigite [SI] para aceptar\nDigite [NO] para cancelar\nIngrese opción: ")
         salir_lower = salir.lower()
         if salir_lower == "si":
             # Si el usuario desea salir, salimos del bucle y terminamos el programa
